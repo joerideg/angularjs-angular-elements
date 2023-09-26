@@ -1,0 +1,18 @@
+{
+  "name": "injection-workspace",
+  "private": true,
+  "author": "Joeri de Gooijer <joerideg@gmail.com> (https://joerideg.dev/)",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start:elements": "rimraf ./elements/dist && pnpm --filter elements start",
+    "start:apps": "wait-on file:./elements/dist/main.js && pnpm --filter !elements start",
+    "start:ng-app": "wait-on file:./elements/dist/main.js && pnpm --filter ng-app start",
+    "start:all": "run-p start:elements start:apps",
+    "start": "run-p start:elements start:ng-app"
+  },
+  "devDependencies": {
+    "npm-run-all": "4.1.5",
+    "rimraf": "5.0.4",
+    "wait-on": "7.0.1"
+  }
+}

@@ -1,0 +1,5 @@
+packages:
+  - './elements'
+  - './ng-app'
+  - './angular-app'
+  - './vue-project'

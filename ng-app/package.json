@@ -1,0 +1,23 @@
+{
+  "name": "ng-app",
+  "private": true,
+  "scripts": {
+    "build": "parcel build index.html",
+    "start": "parcel serve index.html"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/preset-env": "7.22.20",
+    "@parcel/transformer-inline-string": "2.9.3",
+    "babel-plugin-angularjs-annotate": "0.10.0",
+    "parcel": "2.9.3"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "1.1.0",
+    "angular": "1.8.3",
+    "angular-mocks": "1.8.3",
+    "angular-route": "1.8.3",
+    "angular-sanitize": "1.8.3",
+    "elements": "workspace:1.0.0"
+  }
+}
